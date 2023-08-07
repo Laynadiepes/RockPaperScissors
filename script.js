@@ -32,7 +32,8 @@ function playFiveRounds() {
         for(i=0; i<5; i++){
             const playerSelection = player();
             console.log(playRound(playerSelection, computerSelection));
-        }    
+        }  
+        console.log("Nice Play! See you soon!");  
     }
     else
     console.log("goodbye");
