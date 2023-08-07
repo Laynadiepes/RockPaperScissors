@@ -10,18 +10,18 @@ function player() {
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection != "rock" && playerSelection != "paper" && playerSelection != "scissors") {
-        alert("Opção inválida");
+        return("Opção inválida");
         i--;
     }
     else {
         if (playerSelection === computerSelection)
-            alert("Empate / Computer: " + computerSelection + " Player: " + playerSelection);
+            return("Empate / Computer: " + computerSelection + " Player: " + playerSelection);
         else if (playerSelection == "rock" && computerSelection == "paper" ||
             playerSelection == "paper" && computerSelection == "scissors" ||
             computerSelection == "rock" && playerSelection == "scissors")
-            alert("Computer Wins! Computer: " + computerSelection + " Player: " + playerSelection);
+            return("Computer Wins! Computer: " + computerSelection + " Player: " + playerSelection);
         else {
-            alert("You win!! Computer: " + computerSelection + " Player: " + playerSelection);
+            return("You win!! Computer: " + computerSelection + " Player: " + playerSelection);
         }
     }
 }
@@ -31,11 +31,11 @@ function playFiveRounds() {
     if (start) {
         for(i=0; i<=5; i++){
             const playerSelection = player();
-            playRound(playerSelection, computerSelection);
+            console.log(playRound(playerSelection, computerSelection));
         }    
     }
     else
-        alert("goodbye");
+    console.log("goodbye");
 }
 
 
