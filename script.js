@@ -33,7 +33,7 @@ function playFiveRounds() {
             const playerSelection = player();
             console.log(playRound(playerSelection, computerSelection));
         }  
-        console.log("Nice Play! See you soon!");  
+        console.log("Nice Play! See you soon! Bye");  
     }
     else
     console.log("goodbye");
