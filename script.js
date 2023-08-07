@@ -15,13 +15,13 @@ function playRound(playerSelection, computerSelection) {
     }
     else {
         if (playerSelection === computerSelection)
-            return("Empate / Computer: " + computerSelection + " Player: " + playerSelection);
+            return("It's a draw!! Both played " +computerSelection);
         else if (playerSelection == "rock" && computerSelection == "paper" ||
             playerSelection == "paper" && computerSelection == "scissors" ||
             computerSelection == "rock" && playerSelection == "scissors")
-            return("Computer Wins! Computer: " + computerSelection + " Player: " + playerSelection);
+            return("Computer Wins! "+ computerSelection+ " beats " + playerSelection);
         else {
-            return("You win!! Computer: " + computerSelection + " Player: " + playerSelection);
+            return("You win!! " + playerSelection+ " beats " + computerSelection);
         }
     }
 }
