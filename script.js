@@ -29,7 +29,7 @@ function playRound(playerSelection, computerSelection) {
 function playFiveRounds() {
     let start = confirm("let's play Rock, Paper, Scissors!");
     if (start) {
-        for(i=0; i<=5; i++){
+        for(i=0; i<5; i++){
             const playerSelection = player();
             console.log(playRound(playerSelection, computerSelection));
         }    
